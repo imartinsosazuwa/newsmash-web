@@ -9,6 +9,6 @@ app.get('*', function (req, res) {
  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(PORT, (req, res)) => {
+app.listen(PORT, (req, res) => {
   console.log(`server listening on port: ${PORT}`)
-};
+});
