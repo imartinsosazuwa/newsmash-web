@@ -1,3 +1,5 @@
+import APIEndpoints from '../config/APIEndpoints';
+
 export const getMashWords = text => {
   const request = {
     method: 'POST',
@@ -10,7 +12,7 @@ export const getMashWords = text => {
   return dispatch => {
     dispatch({ type: 'SET_TOPIC', payload: text });
     dispatch({ type: 'START_FETCH_MASH' });
-    return fetch('/api/v1/mashes/data', request)
+    return fetch(APIEndpoints.NEW_MASH, request)
       .then(res => res.json())
       .then(data => {
         dispatch({
@@ -28,10 +30,11 @@ export const getMashWords = text => {
 };
 
 export const getTopMash = () => {
+  // console.log('AppConstants', AppConstants)
   return dispatch => {
     dispatch({ type: 'SET_TOPIC', payload: 'Top stories' });
     dispatch({ type: 'START_FETCH_MASH' });
-    return fetch('/api/v1/mashes/data')
+    return fetch(APIEndpoints.NEW_MASH)
       .then(res => res.json())
       .then(data => {
         dispatch({
@@ -59,7 +62,7 @@ export const saveMash = data => {
   };
   return dispatch => {
     dispatch({ type: 'START_SAVE_MASH' });
-    return fetch('/api/v1/mashes', request)
+    return fetch(APIEndpoints.MASHES, request)
       .then(res => (res.ok ? res : new Error(res)))
       .then(res => res.json())
       .then(data => {
@@ -79,7 +82,7 @@ export const saveMash = data => {
 
 export const getRecentMashes = () => {
   return dispatch => {
-    return fetch('/api/v1/mashes/recent')
+    return fetch(APIEndpoints.SAVED_MASHES)
       .then(res => res.json())
       .then(data => {
         dispatch({
@@ -94,7 +97,7 @@ export const getRecentMashes = () => {
 export const getOlderSavedMash = id => {
   return dispatch => {
     dispatch({ type: 'START_FETCH_SAVED_MASH' });
-    return fetch(`/api/v1/mashes/${id}`)
+    return fetch(APIEndpoints.MASHES + id)
       .then(res => res.json())
       .then(data => {
         dispatch({

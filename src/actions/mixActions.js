@@ -1,8 +1,10 @@
+import APIEndpoints from '../config/APIEndpoints';
+
 export const fetchMix = () => {
   // returns a function that dispatches an action with data to the redux store
   return dispatch => {
     dispatch({ type: 'START_FETCH_MIX' });
-    return fetch('/api/v1/mixes/data')
+    return fetch(APIEndpoints.NEW_MIX)
       .then(res => res.json())
       .then(data => {
         return dispatch({
@@ -25,7 +27,7 @@ export const fetchMixSearch = (text) => {
   };
   return dispatch => {
     dispatch({ type: 'START_FETCH_MIX' });
-    return fetch('/api/v1/mixes/data', request)
+    return fetch(APIEndpoints.NEW_MIX, request)
       .then(res => res.json())
       .then(data => {
         dispatch({
