@@ -15,6 +15,13 @@ a:active {
   text-decoration: none;
 }
 
+/* large screens */
+/* @@media screen and (min-width: 960px) {
+
+} */
+
+/* tablet, laptop screens */
+/* @@media screen and () */
 .navbar-container {
   display: flex;
   align-items: center;
@@ -50,7 +57,7 @@ a:active {
 .headline {
   text-align: center;
   font-size: 1.9em;
-  margin: 0 0 1em 0;
+  margin: .8em 0 1em 0;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -102,6 +109,8 @@ a:active {
 
 .mix-item {
   margin: 0 0 1.2em 0;
+  position: relative;
+  z-index: 2;
 }
 
 .news-source {
@@ -110,6 +119,7 @@ a:active {
   position: relative;
   top: 0.03em;
   padding: 0 0.4em 0 0;
+  z-index: 0;
 }
 
 .news-content {
@@ -124,7 +134,7 @@ a:active {
   position: absolute;
   float: right;
   top: 50px;
-  right: 20px;
+  right: 47px;
 }
 
 .save-button {
@@ -150,7 +160,7 @@ a:active {
   color: lightgrey;
   position: absolute;
   top: 15px;
-  right: 20px;
+  right: 47px;
 }
 
 .toggle-button:hover {

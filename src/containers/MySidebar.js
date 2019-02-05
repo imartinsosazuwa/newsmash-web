@@ -34,11 +34,18 @@ class MySidebar extends Component {
         }
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
-        styles={{ sidebar: { background: 'white' } }}
+        styles={{
+          sidebar: { background: 'white', zIndex: 4 },
+          // root: { zIndex: 0 },
+        }}
       >
-        <button className="hamburger hamburger--spin" type="button" onClick={this.onSetSidebarOpen}>
+        <button
+          className="hamburger hamburger--spin"
+          type="button"
+          onClick={this.onSetSidebarOpen}
+        >
           <span className="hamburger-box toggle-sidebar-btn">
-            <span className="hamburger-inner"></span>
+            <span className="hamburger-inner" />
           </span>
         </button>
       </Sidebar>
