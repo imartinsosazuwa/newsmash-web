@@ -1,44 +1,31 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Welcome to NewsMash
 
-In the project directory, you can run:
+It's the news but prettier. Explore the recent headlines via wordcloud data visualization. Search by topic or get this moment's top stories.
 
-### `npm start`
+See it in action at http://newsmashed.herokuapp.com
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+NewsMash was built with React and Redux on Ruby on Rails with a PostgreSQL backend.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Mix it or Mash it
 
-### `npm test`
+A mix is a list of news stories from various sources. For each story, it displays the headline, news source, summary, and a link to the original article.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A mash is a wordcloud displaying words and phrases sized roughly according to popularity.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Search - get a mix or mash for any topic
+* Explore - click on any mash word or phrase for a mix
+* Snapshot - save a mash for easy retrieval
+* Go deeper - follow link to read original article
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Contributing
+Bug reports and pull requests are welcome on GitHub at [https://github.com/theresamorelli/newsmash-web]. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This is available as open source under the terms of the MIT License.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Code of Conduct
+Everyone interacting with the Noted project’s codebases, issue trackers, etc. is expected to follow the code of conduct.
