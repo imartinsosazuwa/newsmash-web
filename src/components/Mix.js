@@ -28,7 +28,7 @@ const Mix = props => {
     );
   }
 
-  return <div>{mixDisplay}</div>;
+  return <div class="main-content">{mixDisplay}</div>;
 };
 
 export default Mix;
