@@ -2,19 +2,11 @@ import React from 'react';
 
 export default function LoadingSpinner() {
   return (
-    <div id="spinner" className="container">
-      <div className="row">
-        <div id="loader">
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
-          <div className="lading" />
-        </div>
+    <div className="container">
+      <div className="spinner">
+        <div className="dot-loader" />
+        <div className="dot-loader" />
+        <div className="dot-loader" />
       </div>
       <span className="sr-only">Loading...</span>
     </div>

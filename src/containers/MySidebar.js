@@ -15,7 +15,6 @@ class MySidebar extends Component {
   }
 
   onSetSidebarOpen = () => {
-    // let toggleOpen = ;
     this.setState({ sidebarOpen: !this.state.sidebarOpen });
   };
 
@@ -35,8 +34,7 @@ class MySidebar extends Component {
         open={this.state.sidebarOpen}
         onSetOpen={this.onSetSidebarOpen}
         styles={{
-          sidebar: { background: 'white', zIndex: 4 },
-          // root: { zIndex: 0 },
+          sidebar: { background: 'white', zIndex: 3, top: 75 }
         }}
       >
         <button
