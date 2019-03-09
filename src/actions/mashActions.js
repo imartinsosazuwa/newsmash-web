@@ -1,4 +1,4 @@
-import APIEndpoints from '../config/APIEndpoints';
+import APIEndpoints from '../myConfig/APIEndpoints';
 
 export const getMashWords = text => {
   const request = {

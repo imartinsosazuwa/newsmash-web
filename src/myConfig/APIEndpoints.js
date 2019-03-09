@@ -1,4 +1,4 @@
-// const APIRoot = 'http://localhost:3001';
+// const APIRoot = 'http://localhost:3001/api/v1';
 const APIRoot = 'https://newsmashed-api.herokuapp.com/api/v1';
 
 export default {

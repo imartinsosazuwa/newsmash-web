@@ -1,4 +1,4 @@
-import APIEndpoints from '../config/APIEndpoints';
+import APIEndpoints from '../myConfig/APIEndpoints';
 
 export const fetchMix = () => {
   // returns a function that dispatches an action with data to the redux store
