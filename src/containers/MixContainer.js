@@ -48,7 +48,7 @@ class MixContainer extends Component {
     const mashLink = topicSlug || '';
 
     return (
-      <div className="mix-container main-content">
+      <div className="main-content">
       <MySidebar />
         <div className="headline">{headline}</div>
         <Mix mix={this.props.mix} />

@@ -1,6 +1,6 @@
 body {
   /* margin: 30px; */
-  color: #343a41;
+  color: #40474f;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -15,13 +15,6 @@ a:active {
   text-decoration: none;
 }
 
-/* large screens */
-/* @@media screen and (min-width: 960px) {
-
-} */
-
-/* tablet, laptop screens */
-/* @@media screen and () */
 .navbar-container {
   display: flex;
   align-items: center;
@@ -44,11 +37,6 @@ a:active {
   left: 55%;
   transform: translate(-50%, -55%);
   text-align: center;
-}
-
-.main-content {
-  margin: auto;
-  width: 75%;
 }
 
 .headline {
@@ -93,6 +81,10 @@ a:active {
   margin: 1em 0 1.8em 0;
 }
 
+.main-content {
+  margin: 1em;
+}
+
 .mix-container {
   text-align: left;
   overflow: hidden;
@@ -102,26 +94,29 @@ a:active {
 .mix-headline {
   font-family: 'Zilla Slab', serif;
   font-size: 1.2em;
-  margin: -10px 0 0 0;
+  margin-bottom: 0.4em;;
 }
 
 .mix-item {
-  margin: 0 0 1.2em 0;
-  position: relative;
-  z-index: 2;
+  display: inline-block;
+  padding: .5em;
+  margin-bottom: 2em;
+}
+
+.mix-item img {
+  max-width: 50%;
+  float: right;
+  margin: 0 0 0 .75em;
 }
 
 .news-source {
   font-family: 'Staatliches', sans-serif;
-  font-size: 0.95em;
-  position: relative;
-  top: 0.03em;
-  padding: 0 0.4em 0 0;
-  z-index: 0;
+  font-size: 1em;
+  margin-bottom: 0.5em;
 }
 
 .news-content {
-  font-size: .75em;
+  font-size: .85em;
   line-height: 0.8;
   font-family: 'Roboto', sans-serif;
 }
@@ -183,6 +178,70 @@ a:active {
   margin: 0 auto;
   margin-top: 170px;
 }
+
+
+
+/* medium to large screens */
+@media screen and (min-width: 600px) {
+  .brick-grid {
+    display: block;
+    column-gap: 1.5em;
+  }
+  
+  .mix-item {
+    margin-bottom: 1.5em;
+  }
+
+  .mix-item img {
+    max-width: 100%;
+    float: right;
+    margin-bottom: 0.6em;
+  }
+}
+
+
+
+/* medium screens */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .main-content {
+    margin: 1.5em;
+  }
+
+  .brick-grid {
+    column-count: 2;
+  }
+
+  .mix-item {
+    display: inline-block;
+    padding: 1.5em;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #eaeaea;
+  }
+}
+
+
+/* large screens */
+@media screen and (min-width: 900px) {
+  .main-content {
+    margin: 2em;
+  }
+
+  .brick-grid {
+    column-count: 3;
+  }
+
+  .mix-item {
+    display: inline-block;
+    padding: 1.5em;
+    background-color: #f3f3f3;
+    border: 1px solid #eaeaea;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+  }
+}
+
+
 
 /* Spinner */
       

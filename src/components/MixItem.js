@@ -1,14 +1,19 @@
 import React from 'react';
 
-const Story = props => {
+export default ({ url, urlToImage, headline, source, description }) => {
+
+  const imgSrc = urlToImage
+    ? <img src={urlToImage ? urlToImage : null} alt={headline}></img>
+    : null;
+  
   return (
     <div className="mix-item">
-      {/* <a href={props.story.url}><img src={props.story.urlToImage} alt="news photo" /></a> */}
-      <div className="mix-headline"><a href={props.url}>{props.headline}</a></div>
-      <span className="news-source">{props.source}</span>
-      <span className="news-content"> {props.description}</span>
+      <div className="news-source">{source}</div>
+      <div className="mix-headline">
+        <a href={url}>{headline}</a>
+      </div>
+      <span>{imgSrc}</span>
+      <span className="news-content">{description}</span>
     </div>
   );
 };
-
-export default Story;

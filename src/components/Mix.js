@@ -9,17 +9,20 @@ const Mix = props => {
   if (loading) {
     mixDisplay = <LoadingSpinner />;
   } else if (stories.length) {
-    mixDisplay = stories.map(story => {
-      return (
-        <MixItem
-          key={story.url}
-          headline={story.title}
-          source={story.name}
-          description={story.description}
-          url={story.url}
-        />
-      );
-    });
+    mixDisplay = <div className="brick-grid">
+      { stories.map(story => {
+        return (
+          <MixItem
+            key={story.url}
+            headline={story.title}
+            source={story.name}
+            description={story.description}
+            url={story.url}
+            urlToImage={story.urlToImage}
+          />
+        );
+      }) };
+    </div>;
   } else {
     mixDisplay = (
       <div className="loading-message">
