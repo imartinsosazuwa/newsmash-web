@@ -31,7 +31,7 @@ const Mix = props => {
     );
   }
 
-  return <div class="main-content">{mixDisplay}</div>;
+  return <div className="main-content">{mixDisplay}</div>;
 };
 
 export default Mix;
