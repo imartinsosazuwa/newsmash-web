@@ -2,8 +2,9 @@
 const APIRoot = 'https://newsmashed-api.herokuapp.com/api/v1';
 
 export default {
-  NEW_MASH: APIRoot + '/mashes/data',
-  MASHES: APIRoot + '/mashes',
-  SAVED_MASHES: APIRoot + '/mashes/recent',
-  NEW_MIX: APIRoot + '/mixes/data',
+  GET_NEW_MASH: APIRoot + '/mashes/new',
+  SAVE_MASH: APIRoot + '/mashes',
+  // GET_SAVED_MASH: APIRoot + '/mashes/:id',
+  GET_SAVED_MASHES: APIRoot + '/mashes',
+  GET_NEW_MIX: APIRoot + '/mixes/new',
 };

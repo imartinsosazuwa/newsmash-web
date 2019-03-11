@@ -4,7 +4,7 @@ export const fetchMix = () => {
   // returns a function that dispatches an action with data to the redux store
   return dispatch => {
     dispatch({ type: 'START_FETCH_MIX' });
-    return fetch(APIEndpoints.NEW_MIX)
+    return fetch(APIEndpoints.GET_NEW_MIX)
       .then(res => res.json())
       .then(data => {
         return dispatch({
