@@ -24,30 +24,31 @@ class MySidebar extends Component {
 
   render() {
     return (
-      <Sidebar
-        sidebar={
-          <div className="sidebar">
-            <TopLinks />
-            <RecentMashes recentMashes={this.props.recentMashes} />
-          </div>
-        }
-        open={this.state.sidebarOpen}
-        onSetOpen={this.onSetSidebarOpen}
-        styles={{
-          sidebar: { background: 'white', zIndex: 3, top: 75 }
-        }}
-      >
-        <button
-          className="hamburger hamburger--spin"
-          type="button"
-          onClick={this.onSetSidebarOpen}
-        >
-          <span className="hamburger-box toggle-sidebar-btn">
-            <span className="hamburger-inner" />
-          </span>
-        </button>
-      </Sidebar>
-    );
+      <div></div>
+      // <Sidebar
+      //   sidebar={
+      //     <div className="sidebar">
+      //       <TopLinks />
+      //       <RecentMashes recentMashes={this.props.recentMashes} />
+      //     </div>
+      //   }
+      //   open={this.state.sidebarOpen}
+      //   onSetOpen={this.onSetSidebarOpen}
+      //   styles={{
+      //     sidebar: { background: 'white', zIndex: 3, top: 75 }
+      //   }}
+      // >
+      //   <button
+      //     className="hamburger hamburger--spin"
+      //     type="button"
+      //     onClick={this.onSetSidebarOpen}
+      //   >
+      //     <span className="hamburger-box toggle-sidebar-btn">
+      //       <span className="hamburger-inner" />
+      //     </span>
+      //   </button>
+      // </Sidebar>
+    )
   }
 }
 

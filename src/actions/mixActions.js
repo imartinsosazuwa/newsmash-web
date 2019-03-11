@@ -27,7 +27,7 @@ export const fetchMixSearch = (text) => {
   };
   return dispatch => {
     dispatch({ type: 'START_FETCH_MIX' });
-    return fetch(APIEndpoints.NEW_MIX, request)
+    return fetch(APIEndpoints.GET_NEW_MIX, request)
       .then(res => res.json())
       .then(data => {
         dispatch({
